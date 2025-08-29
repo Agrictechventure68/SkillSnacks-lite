@@ -1,48 +1,40 @@
-# SkillSnacks Lite Prompt Documentation
+# SkillSnacks Lite – Prompt Documentation
 
-## Prompt 1 – Simplified Explanation
-"You are a study assistant. Explain the following in simple language for a beginner: [user input]"
+This document captures the **prompt engineering strategy** used in SkillSnacks Lite.  
+We designed clear, multi-stage prompts to guide GPT-4 outputs for **explanations, quizzes, and learning tips**.
 
-### Example Response
+---
+
+## 📖 Prompt 1 – Simplified Explanation
+**Instruction:**  
+You are a study assistant. Explain the following in simple language for a beginner: [user input]
+
+**Expected Response Pattern:**
 - Converts complex text into easy-to-understand explanation.
 - Uses bullet points or numbered steps.
 - Highlights key concepts.
 
-## Prompt 2 – Quiz Generation
-"Create 5 quiz questions (mix of multiple choice and short-answer) with answers based on: [user input]"
+---
 
-### Example Response
-1. Question 1: ...
-   - Options: A, B, C, D
-   - Answer: B
-2. Question 2: ...
-- etc.
+## 🎯 Prompt 2 – Quiz Generation
+**Instruction:**  
+Create 5 quiz questions (mix of multiple choice and short-answer) with answers based on: [user input]
 
-## Prompt 3 – Learning Tips
-"Suggest 3 learning strategies or resources for better understanding of: [user input]"
+**Expected Response Pattern:**
+1. Question 1  
+   - Options: A, B, C, D  
+   - Answer: B  
+2. Question 2  
+   - Short-answer format  
+   - Answer included  
+3. And so on…
 
-### Example Response
-- Strategy 1: ...
-- Strategy 2: ...
-- Strategy 3: ...
+--
+## 🧭 Prompt 3 – Learning Tips
+**Instruction:**  
+Suggest 3 learning strategies or resources for better understanding of: [user input]
 
-3️⃣ Installation Steps (Dependencies)
-1. Make sure Python 3.10+ is installed.
-
-2. Create a virtual environment (recommended):
-* python -m venv venv
-
-3. Activate virtual environment:
-* Windows: venv\Scripts\activate
-* Linux/Mac: source venv/bin/activate
-
-4. Install dependencies:
-* pip install streamlit openai python-dotenv
-
-5. Create .env file in project root:
-* OPENAI_API_KEY=your_openai_api_key_here
-
-6. Run locally:
-* streamlit run app.py
-
-7. Optional: Push to GitHub → deploy to Streamlit Cloud.
+**Expected Response Pattern:**
+- Strategy 1: practical technique  
+- Strategy 2: online resource / study hack  
+- Strategy 3: retention or memory strategy  
